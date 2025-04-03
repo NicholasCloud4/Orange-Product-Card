@@ -1,9 +1,12 @@
 <!--
 TASKS:
-    1. Override Tailwind's default `sans` font family with Josefin Sans
-	2. Assign a new font family named "title", which uses Playfair Display SC
-	3. Make sure all the text now uses Josefin Sans
-	4. Change the title of the product and the subtitle to Playfair Display SC
+	1. Give the card (the `main` element) a background of white
+	2. Make the card take up 100% width of the parent container
+	3. Give the card a maximum width of `xs`
+	4. Horizontally centre the card so it sits in the middle of the screen
+       (you'll probably need to apply some classes to `body`)
+	5. Give the card some margin at the top 
+	6. Give the card some padding
 -->
 
 <!doctype html>
@@ -22,8 +25,8 @@ TASKS:
     <script src="config.js"></script>
 </head>
 
-<body class="bg-pale_orange">
-    <main>
+<body class="bg-pale_orange flex justify-center">
+    <main class="bg-white w-full max-w-xs m-10 p-3">
         <img src="orange.jpg" alt="orange with stem and leaf on a white-gray background">
         <h1 class="font-title">A single orange</h1>
         <p class="font-title">with stem and leaf</p>
